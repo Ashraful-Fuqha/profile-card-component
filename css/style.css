@@ -1,0 +1,98 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-family: 'Kumbh sans', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -200vw bottom 45vh, right -200vw top 45vh;
+    background-color:  hsl(185, 75%, 39%);
+}
+
+.card{
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: white;
+    transition: all 1s ease;
+    animation: introLoad 1s  forwards;
+}
+
+img{
+    margin-top: 4.5rem;
+    border: white 5px solid;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 1.1rem;
+    margin: 1rem 0 .8rem 0;
+}
+
+h1,h2{
+    font-size: 1.1rem;
+    color: hsl(229,23%,23%), Dark;
+    font-weight: 700;
+}
+span{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(229,23%,23%);
+}
+main p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(227,10%,46%);
+}
+
+section.insight {
+    border-top: 0.056rem solid hsl(227,10%,46%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+/* Animation Section */
+
+@keyframes introLoad {
+    0%{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Breakpoints Section */
+
+@media only screen and (min-width:376px) {
+    main{
+        background-position: left -5vw bottom 35vh, right -5vw top 35vh;
+    }
+
+}
