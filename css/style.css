@@ -92,7 +92,7 @@ section.insight {
 
 @media only screen and (min-width:376px) {
     main{
-        background-position: left -5vw bottom 35vh, right -5vw top 35vh;
+        background-position: left -20vw bottom 45vh, right -20vw top 45vh;
     }
 
 }
